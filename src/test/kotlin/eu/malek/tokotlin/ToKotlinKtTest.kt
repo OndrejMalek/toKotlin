@@ -1,4 +1,4 @@
-package hackerrank
+package eu.malek.tokotlin
 
 import kotlin.test.Test
 import kotlin.test.*

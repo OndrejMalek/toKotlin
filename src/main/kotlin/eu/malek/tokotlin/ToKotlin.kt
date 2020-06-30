@@ -1,4 +1,4 @@
-package hackerrank
+package eu.malek.tokotlin
 
 import java.lang.RuntimeException
 import java.lang.StringBuilder
@@ -11,7 +11,7 @@ import kotlin.collections.LinkedHashSet
 
 
 inline fun <reified K, reified V> Map<K,V>.toKotlin(): String {
-    var map = this
+    val map = this
     val factoryFun = when (map) {
         is SortedMap<K,V> -> "sortedMapOf"
         is LinkedHashMap<K,V> -> "linkedMapOf"
@@ -23,7 +23,7 @@ inline fun <reified K, reified V> Map<K,V>.toKotlin(): String {
 }
 
 inline fun <reified K, reified V> Map.Entry<K,V>.toKotlin(): String {
-    var entry = this
+    val entry = this
     return when (entry) {
         else -> "${nullableToKotlin(entry.key)} to ${nullableToKotlin(entry.value)}"
     }
@@ -48,7 +48,7 @@ val LIST_DIV = ", "
 
 inline fun <reified E> collectionToKotlin(list: Collection<E>, factory: String): String {
     if (list.isEmpty()) return "$factory<${E::class.simpleName}>()"
-    var factory2 = if (list.all { it == null }) "${factory}<${E::class.simpleName}?>" else factory
+    val factory2 = if (list.all { it == null }) "${factory}<${E::class.simpleName}?>" else factory
 
     val sb = StringBuilder("$factory2(")
     for (e in list) {
