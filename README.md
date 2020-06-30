@@ -9,7 +9,7 @@ arrayOf<Int>().toKotlin() == "arrayOf<Int>()"
 ```
 
 Purpose of this is to create test doubles easily.
-Uses generics reflection with `reified`. Meant as development tool.
+Uses generics reflection with `reified`. Is extension function. Meant as development tool.
 
 
 #### Implemented ####
