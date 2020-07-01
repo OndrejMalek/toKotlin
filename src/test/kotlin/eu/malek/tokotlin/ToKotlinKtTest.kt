@@ -1,5 +1,9 @@
 package eu.malek.tokotlin
 
+// Author Ondrej Malek - o.malek.cz@gmail.com
+
+import kotlin.reflect.full.functions
+import kotlin.reflect.jvm.reflect
 import kotlin.test.Test
 import kotlin.test.*
 

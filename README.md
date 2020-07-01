@@ -13,7 +13,9 @@ Uses generics reflection with `reified`. Is extension function. Meant as develop
 
 
 #### Implemented ####
-Lists, Maps, Sets
+Arrays, Lists, Maps, Sets
 
 #### TODO ####
  - Data classes
+ - Functions
+ - Lambdas ( probably not possible without parsing all codebase )

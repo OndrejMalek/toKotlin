@@ -1,5 +1,7 @@
 package eu.malek.tokotlin
 
+// Author Ondrej Malek - o.malek.cz@gmail.com
+
 import java.lang.RuntimeException
 import java.lang.StringBuilder
 import java.util.*
